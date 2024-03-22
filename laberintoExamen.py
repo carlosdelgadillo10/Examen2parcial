@@ -42,13 +42,13 @@ def mover_jugador(laberinto, direccion, jugador_fila, jugador_columna):
     nueva_fila = jugador_fila
     nueva_columna = jugador_columna
 
-    if direccion == "w" and jugador_fila > 0 and laberinto[jugador_fila - 1][jugador_columna] != pared:
+    if direccion == "r" and jugador_fila > 0 and laberinto[jugador_fila - 1][jugador_columna] != pared:
         nueva_fila -= 1
-    elif direccion == "s" and jugador_fila < filas - 1 and laberinto[jugador_fila + 1][jugador_columna] != pared:
+    elif direccion == "f" and jugador_fila < filas - 1 and laberinto[jugador_fila + 1][jugador_columna] != pared:
         nueva_fila += 1
-    elif direccion == "a" and jugador_columna > 0 and laberinto[jugador_fila][jugador_columna - 1] != pared:
+    elif direccion == "g" and jugador_columna > 0 and laberinto[jugador_fila][jugador_columna - 1] != pared:
         nueva_columna -= 1
-    elif direccion == "d" and jugador_columna < columnas - 1 and laberinto[jugador_fila][jugador_columna + 1] != pared:
+    elif direccion == "h" and jugador_columna < columnas - 1 and laberinto[jugador_fila][jugador_columna + 1] != pared:
         nueva_columna += 1
 
     return nueva_fila, nueva_columna
