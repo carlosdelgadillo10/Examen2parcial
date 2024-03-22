@@ -1,3 +1,5 @@
+# Nombre: Carlos Omar Delgadillo Sanchez
+# Fecha: 22 de marzo 2024
 import random
 
 # Tamaño del laberinto
